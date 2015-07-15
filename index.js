@@ -2,7 +2,7 @@ var path = require( 'path' );
 var r = require( 'rollup-babel' );
 
 module.exports = function rollup ( inputdir, outputdir, options ) {
-	if ( !options.entry || !options.dest ) {
+	if ( !options.entry ) {
 		throw new Error( 'You must supply `options.entry`' );
 	}
 
