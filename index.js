@@ -3,11 +3,11 @@ var r = require( 'rollup-babel' );
 
 module.exports = function rollup ( inputdir, outputdir, options ) {
 	if ( !options.entry || !options.dest ) {
-		throw new Error( 'You must supply `entry` and `dest` options' );
+		throw new Error( 'You must supply `options.entry`' );
 	}
 
+	options.dest = path.resolve( outputdir, options.dest || options.entry );
 	options.entry = path.resolve( inputdir, options.entry );
-	options.dest = path.resolve( outputdir, options.dest );
 
 	return r.rollup( options ).then( function ( bundle ) {
 		return bundle.write( options );
