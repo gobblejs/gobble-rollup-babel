@@ -1,5 +1,9 @@
 # gobble-rollup-babel changelog
 
+## 0.3.0
+
+* Update rollup-babel to 0.3.0
+
 ## 0.2.0
 
 * Downgrade rollup to 0.15.0, pending [rollup#132](https://github.com/rollup/rollup/issues/132)
