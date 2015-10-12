@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "https://github.com/gobblejs/gobble-rollup-babel",
   "dependencies": {
-    "rollup-babel": "^0.5.2"
+    "rollup-babel": "^0.6.0"
   },
   "keywords": [
     "gobble",
