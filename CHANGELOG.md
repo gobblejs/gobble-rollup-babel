@@ -1,5 +1,9 @@
 # gobble-rollup-babel changelog
 
+## 0.6.0
+
+* Update rollup-babel to 0.6
+
 ## 0.5.0
 
 * Update rollup-babel to 0.5.0
