@@ -1,6 +1,6 @@
 {
   "name": "gobble-rollup-babel",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Bundle ES6 modules with gobble, rollup and babel",
   "author": "Rich Harris",
   "license": "MIT",

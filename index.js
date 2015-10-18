@@ -9,6 +9,9 @@ module.exports = function rollupBabel ( inputdir, outputdir, options ) {
 	options.dest = path.resolve( outputdir, options.dest || options.entry );
 	options.entry = path.resolve( inputdir, options.entry );
 
+	options.babel = options.babel || {};
+	if ( options.sourceMap ) options.babel.sourceMap = options.sourceMap;
+
 	return r.rollup( options ).then( function ( bundle ) {
 		return bundle.write( options );
 	});
